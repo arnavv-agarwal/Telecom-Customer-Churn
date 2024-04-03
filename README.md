@@ -1,5 +1,5 @@
 ## Overview
-This project focuses on investigating opportunities to decrease customer churn at S-mobile, a mobile service provider. The dataset includes three parts: a training sample with a 50% churn rate, a test sample with a 50% churn rate, and a representative sample with a churn rate of 2%, reflecting the actual monthly churn rate for S-mobile.
+<p align="justify">This project focuses on investigating opportunities to decrease customer churn at S-mobile, a mobile service provider. The dataset includes three parts: a training sample with a 50% churn rate, a test sample with a 50% churn rate, and a representative sample with a churn rate of 2%, reflecting the actual monthly churn rate. </p>
 
 ## Dataset
 - Training Sample: 27,300 observations with a 50% churn rate.
@@ -13,7 +13,7 @@ s_mobile["churn_yes"] = rsm.ifelse(s_mobile["churn"] == "yes", 1, 0)
 ```
 
 ## Analysis
-Using a logit model, the likelihood of customer churn risk was predicted. The relative importance of features was assessed using the odd_ratio function, highlighting key variables influencing churn risk.
+<p align="justify">Using a logit model, the likelihood of customer churn risk was predicted. The relative importance of features was assessed using the odd_ratio function, highlighting key variables influencing churn risk.</p>
 
 ```python 
 lr2 = smf.glm(
